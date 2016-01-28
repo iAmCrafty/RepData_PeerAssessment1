@@ -20,7 +20,6 @@ library(ggplot2)
 
 ```{r}
 #  Import "activity.csv" to df.raw
-
 df.raw <- read.csv("activity.csv", header = TRUE, stringsAsFactors = FALSE)
 str(df.raw)
 ```

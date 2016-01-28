@@ -13,8 +13,28 @@ First, load the packages that will be used to complete the task.
 
 ```r
 library(dplyr)
+```
+
+```
+## 
+## Attaching package: 'dplyr'
+## 
+## The following object is masked from 'package:stats':
+## 
+##     filter
+## 
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+```
+
+```r
 library(lubridate)
 library(ggplot2)
+```
+
+```
+## Warning: package 'ggplot2' was built under R version 3.1.3
 ```
 
 ##  Data Import 
@@ -22,7 +42,6 @@ library(ggplot2)
 
 ```r
 #  Import "activity.csv" to df.raw
-
 df.raw <- read.csv("activity.csv", header = TRUE, stringsAsFactors = FALSE)
 str(df.raw)
 ```
